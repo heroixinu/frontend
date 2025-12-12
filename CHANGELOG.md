@@ -19,6 +19,18 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.2.1](https://github.com/perfect-panel/frontend/compare/v1.2.0...v1.2.1) (2025-12-12)
+
+### 🐛 Bug Fixes / 问题修复
+
+* add error handling skip option for server and web version checks ([cc41deb](https://github.com/perfect-panel/frontend/commit/cc41debb335f6b0fd0b9911786ae05a62b598fbf))
+* replace window.location with navigate for payment redirection in recharge, renewal, and reset-traffic components ([3862007](https://github.com/perfect-panel/frontend/commit/3862007b54f5a9f6982aa4836188966151854131))
+* update API prefix handling to ensure compatibility with undefined VITE_API_PREFIX ([3920c6f](https://github.com/perfect-panel/frontend/commit/3920c6ff59106c2f0368c4d6ceda30622be36ce7))
+
+### 📚 Documentation / 文档更新
+
+* fix teek theme ([5ee56f8](https://github.com/perfect-panel/frontend/commit/5ee56f8217cfb7956c50fac76c4732a0c230463f))
+
 ## [1.2.0](https://github.com/perfect-panel/frontend/compare/v1.1.3...v1.2.0) (2025-12-11)
 
 ### ✨ Features / 新功能
