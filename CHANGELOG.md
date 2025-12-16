@@ -19,6 +19,20 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.2.3](https://github.com/perfect-panel/frontend/compare/v1.2.2...v1.2.3) (2025-12-16)
+
+### 🐛 Bug Fixes / 问题修复
+
+* add success message for sorting in subscription table and update device limit terminology to "IP限制" for consistency ([d22919b](https://github.com/perfect-panel/frontend/commit/d22919bf57044d6ad30e6c0debf63e5bc724d3ea))
+* Add the VITE_SHOW_LANDING_PAGE configuration to control the landing page display logic. ([a8a3d18](https://github.com/perfect-panel/frontend/commit/a8a3d180616315fd58d410ad70647d92fb2ea234))
+* Added a scroll wheel event handler to improve the scrolling experience of the combo box option list. ([7648175](https://github.com/perfect-panel/frontend/commit/76481755eacfcc212cdcd034e627c004927d1990))
+* comment out favicon links in admin and user HTML files for clarity; update icon type to support all image formats in route files ([033af5c](https://github.com/perfect-panel/frontend/commit/033af5c01ae1827430fffbb4a69138816824ab8b))
+* enhance logout functionality to support hash-based routing and improve redirect logic ([69a89e0](https://github.com/perfect-panel/frontend/commit/69a89e0c398274b5183d166d7a09be2b7ee9c695))
+* update device limit terminology to "IP Limit" for consistency in English and Chinese locales ([4b868b0](https://github.com/perfect-panel/frontend/commit/4b868b0c1dfe4902ea499918a2a672f9116354cb))
+* update email validation to use z.email for consistency in login and reset forms ([11a0df6](https://github.com/perfect-panel/frontend/commit/11a0df67b74f32da6555261c4f5c310db8449ef8))
+* Update the import path and use empty spaces in the composite component to maintain consistency. ([25d95c7](https://github.com/perfect-panel/frontend/commit/25d95c792fbfde67ac1be7da3b6fb12478848cf6))
+* update user agent placeholders in subscription configuration for consistency ([7f06f76](https://github.com/perfect-panel/frontend/commit/7f06f76056850b9334e99e62749102acaa69bee4))
+
 ## [1.2.2](https://github.com/perfect-panel/frontend/compare/v1.2.1...v1.2.2) (2025-12-16)
 
 ### 🐛 Bug Fixes / 问题修复
