@@ -19,6 +19,14 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.2.4-dev.1](https://github.com/perfect-panel/frontend/compare/v1.2.3...v1.2.4-dev.1) (2025-12-22)
+
+### 🐛 Bug Fixes / 问题修复
+
+* Add onSuccess callback to Unsubscribe component and conditionally render Renewal component ([7b5367a](https://github.com/perfect-panel/frontend/commit/7b5367a9a99ac8ae608a765b79a66c1f7380dcd8))
+* Remove the system log dialog component from the system version card ([71cb827](https://github.com/perfect-panel/frontend/commit/71cb827918ee3250f0c9d06d46d876ce6799b8ac))
+* Update invite link format in auth forms and sidebar to include hash fragment for routing. ([7a8c010](https://github.com/perfect-panel/frontend/commit/7a8c0102958a859c9e7476810d5c9b822f882692))
+
 ## [1.2.3](https://github.com/perfect-panel/frontend/compare/v1.2.2...v1.2.3) (2025-12-16)
 
 ### 🐛 Bug Fixes / 问题修复
