@@ -30,7 +30,6 @@
     "discountPercent": "Discount Percentage",
     "Hour": "Hour",
     "inventory": "Subscription Limit",
-    "inventoryDescription": "Set to -1 for unlimited inventory",
     "unlimitedInventory": "Unlimited (enter -1)",
     "language": "Language",
     "languageDescription": "Leave empty for default without language restriction",

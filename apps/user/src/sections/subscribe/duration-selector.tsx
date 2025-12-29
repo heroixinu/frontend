@@ -78,7 +78,7 @@ const DurationSelector: React.FC<DurationSelectorProps> = ({
         </span>
         {discountPercentage > 0 ? (
           <Badge className="h-6 text-sm" variant="destructive">
-            -{discountPercentage}% {t("discount", "Discount")}
+            -{discountPercentage.toFixed(2)}% {t("discount", "Discount")}
           </Badge>
         ) : (
           <span className="h-6 text-muted-foreground text-sm">--</span>

@@ -454,9 +454,6 @@ export default function SubscribeForm<T extends Record<string, any>>({
                                 value={field.value}
                               />
                             </FormControl>
-                            <FormDescription>
-                              {t("form.inventoryDescription")}
-                            </FormDescription>
                             <FormMessage />
                           </FormItem>
                         )}
