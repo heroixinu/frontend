@@ -120,6 +120,7 @@ export default function SubscribeForm<T extends Record<string, any>>({
     allow_deduction: z.boolean().optional(),
     reset_cycle: z.number().optional(),
     renewal_reset: z.boolean().optional(),
+    show_original_price: z.boolean().optional(),
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -444,16 +445,18 @@ export default function SubscribeForm<T extends Record<string, any>>({
                             <FormLabel>{t("form.inventory")}</FormLabel>
                             <FormControl>
                               <EnhancedInput
-                                min={0}
                                 onValueChange={(value) => {
                                   form.setValue(field.name, value);
                                 }}
-                                placeholder={t("form.noLimit")}
+                                placeholder={t("form.unlimitedInventory")}
                                 step={1}
                                 type="number"
                                 value={field.value}
                               />
                             </FormControl>
+                            <FormDescription>
+                              {t("form.inventoryDescription")}
+                            </FormDescription>
                             <FormMessage />
                           </FormItem>
                         )}
@@ -849,6 +852,33 @@ export default function SubscribeForm<T extends Record<string, any>>({
                               </FormLabel>
                               <FormDescription>
                                 {t("form.purchaseWithDiscountDescription")}
+                              </FormDescription>
+                            </div>
+                            <FormControl>
+                              <Switch
+                                checked={!!field.value}
+                                onCheckedChange={(value) => {
+                                  form.setValue(field.name, value);
+                                }}
+                              />
+                            </FormControl>
+                          </div>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="show_original_price"
+                      render={({ field }) => (
+                        <FormItem>
+                          <div className="flex items-center justify-between">
+                            <div className="space-y-0.5">
+                              <FormLabel>
+                                {t("form.showOriginalPrice")}
+                              </FormLabel>
+                              <FormDescription>
+                                {t("form.showOriginalPriceDescription")}
                               </FormDescription>
                             </div>
                             <FormControl>

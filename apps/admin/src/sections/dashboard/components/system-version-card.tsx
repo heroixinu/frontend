@@ -69,7 +69,7 @@ export default function SystemVersionCard() {
     queryFn: async () => {
       const { data } = await basicCheckServiceVersion(
         {
-          service_name: "admin",
+          service_name: "admin-web-with-api",
           secret: moduleConfig!.secret,
         },
         { skipErrorHandler: true }
@@ -105,13 +105,13 @@ export default function SystemVersionCard() {
     setIsUpdatingWeb(true);
     try {
       await basicUpdateService({
-        service_name: "admin",
+        service_name: "admin-web-with-api",
         secret: moduleConfig.secret,
       });
       toast.success(t("adminUpdateSuccess", "Admin updated successfully"));
 
       await basicUpdateService({
-        service_name: "user",
+        service_name: "user-web-with-api",
         secret: moduleConfig.secret,
       });
       toast.success(t("userUpdateSuccess", "User updated successfully"));

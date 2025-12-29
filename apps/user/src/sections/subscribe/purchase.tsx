@@ -127,6 +127,7 @@ export default function Purchase({
                   ...order,
                   quantity: params.quantity,
                   unit_price: subscribe?.unit_price,
+                  show_original_price: subscribe?.show_original_price,
                 }}
               />
             </CardContent>

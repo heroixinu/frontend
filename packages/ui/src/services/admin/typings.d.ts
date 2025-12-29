@@ -355,6 +355,7 @@ declare namespace API {
     allow_deduction: boolean;
     reset_cycle: number;
     renewal_reset: boolean;
+    show_original_price: boolean;
   };
 
   type CreateTicketFollowRequest = {
@@ -1127,6 +1128,7 @@ declare namespace API {
     size: number;
     search?: string;
     user_id?: number;
+    unscoped?: boolean;
     subscribe_id?: number;
     user_subscribe_id?: number;
   };
@@ -1136,6 +1138,7 @@ declare namespace API {
     size: number;
     search?: string;
     user_id?: number;
+    unscoped?: boolean;
     subscribe_id?: number;
     user_subscribe_id?: number;
   };
@@ -1837,6 +1840,14 @@ declare namespace API {
     order_no: string;
   };
 
+  type ResetUserSubscribeTokenRequest = {
+    user_subscribe_id: number;
+  };
+
+  type ResetUserSubscribeTrafficRequest = {
+    user_subscribe_id: number;
+  };
+
   type Response = {
     /** 状态码 */
     code?: number;
@@ -1993,6 +2004,10 @@ declare namespace API {
     id: number;
   };
 
+  type StopUserSubscribeRequest = {
+    user_subscribe_id: number;
+  };
+
   type StripePayment = {
     method: string;
     client_secret: string;
@@ -2022,6 +2037,7 @@ declare namespace API {
     allow_deduction: boolean;
     reset_cycle: number;
     renewal_reset: boolean;
+    show_original_price: boolean;
     created_at: number;
     updated_at: number;
   };
@@ -2086,6 +2102,7 @@ declare namespace API {
     allow_deduction?: boolean;
     reset_cycle?: number;
     renewal_reset?: boolean;
+    show_original_price?: boolean;
     created_at?: number;
     updated_at?: number;
     sold: number;
@@ -2337,6 +2354,7 @@ declare namespace API {
     allow_deduction: boolean;
     reset_cycle: number;
     renewal_reset: boolean;
+    show_original_price: boolean;
   };
 
   type UpdateTicketStatusRequest = {
@@ -2406,7 +2424,6 @@ declare namespace API {
     created_at: number;
     updated_at: number;
     deleted_at?: number;
-    is_del?: boolean;
   };
 
   type UserAffiliate = {
