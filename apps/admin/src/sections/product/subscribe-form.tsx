@@ -277,7 +277,7 @@ export default function SubscribeForm<T extends Record<string, any>>({
           {trigger}
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-[800px] max-w-full gap-0 md:max-w-screen-md">
+      <SheetContent className="w-[800px] max-w-full gap-0 md:max-w-3xl">
         <SheetHeader>
           <SheetTitle>{title}</SheetTitle>
         </SheetHeader>

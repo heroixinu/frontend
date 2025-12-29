@@ -34,6 +34,15 @@ export function DatePicker({
     }
   };
 
+  const handleClear = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDate(undefined);
+    if (onChange) {
+      onChange(0);
+    }
+  };
+
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -47,16 +56,14 @@ export function DatePicker({
           {value ? intlFormat(value) : <span>{placeholder}</span>}
           <div className="flex items-center gap-2">
             {value && (
-              <X
-                className="size-4 opacity-50 hover:opacity-100"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setDate(undefined);
-                  if (onChange) {
-                    onChange(0);
-                  }
-                }}
-              />
+              <button
+                className="flex items-center"
+                onClick={handleClear}
+                onMouseDown={handleClear}
+                type="button"
+              >
+                <X className="size-4 opacity-50 hover:opacity-100" />
+              </button>
             )}
             <CalendarIcon className="size-4" />
           </div>
