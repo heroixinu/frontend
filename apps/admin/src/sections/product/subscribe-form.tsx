@@ -63,7 +63,7 @@ interface SubscribeFormProps<T> {
 }
 
 const defaultValues = {
-  inventory: 0,
+  inventory: -1,
   speed_limit: 0,
   device_limit: 0,
   traffic: 0,
