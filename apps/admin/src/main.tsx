@@ -3,6 +3,7 @@ import {
   createRouter,
   RouterProvider,
 } from "@tanstack/react-router";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import {
   TanStackQueryContext,
   TanStackQueryProvider,
@@ -83,6 +84,7 @@ if (rootElement && !rootElement.innerHTML) {
           </LanguageProvider>
         </TanStackQueryProvider>
       </Suspense>
+      <SpeedInsights />
     </StrictMode>
   );
 }
